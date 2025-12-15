@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odette Quesada | 40-Year Milestone</title>
+
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- HEADER / FOOTER -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<!-- ============================
+     BANNER
+============================= -->
+<section class="relative w-full h-[60vh] md:h-[75vh] overflow-hidden">
+  <img
+    src="images/CPP_2260.jpg"
+    alt=""
+    class="absolute inset-0 w-full h-full object-cover object-[center_5%] md:object-[center_15%]"
+  >
+  <div class="absolute inset-0 bg-black/30"></div>
+</section>
+
+<!-- ============================
+     PAGE TITLE
+============================= -->
+<section class="py-20 bg-white">
+  <h1 class="text-center
+             text-[2.9rem] md:text-[3.3rem]
+             font-light
+             tracking-[0.42em]
+             uppercase
+             font-['Montserrat']
+             text-black/90">
+    NEWS
+  </h1>
+</section>
+
+<!-- ============================
+     ARTICLE
+============================= -->
+<main class="max-w-4xl mx-auto px-6 pb-24">
+
+  <!-- FEATURE IMAGE -->
+  <div class="mb-12">
+    <img src="images/Article-3.jpg"
+         alt="Odette Quesada performing live"
+         class="w-full rounded-2xl">
+  </div>
+
+  <!-- ARTICLE HEADER -->
+  <header class="mb-10 text-center">
+    <h2 class="text-2xl md:text-3xl font-bold leading-snug mb-3">
+      Odette at 60: Evolving musicality showcased in birthday concert
+    </h2>
+    <p class="text-sm text-gray-500">
+      Published January 28, 2025
+    </p>
+  </header>
+
+  <!-- ARTICLE BODY -->
+  <article class="space-y-6 text-[15px] md:text-base leading-relaxed text-gray-800">
+
+       <p><b>MANILA, Philippines —</b> Ten years after her decision to reignite her performing career at age 50, Odette Quesada is riding high on the wave of an inspiring career resurgence armed only with a potent combination of self-penned OPM (Original Pilipino Music) hits, quick wit, and idiosyncratic performing savvy.</p>
+
+      <p>As a singer, Odette, who turned 60 last Jan. 13, has had her share of signature singles like <i>Friend of Mine</i> and <i>Dito Lang.</i> But she’s even more prolific as a songwriter responsible for the hits of some of the country’s biggest recording artists — like Sharon Cuneta (<i>To Love Again</i>, <i>You’re the One</i>), Kuh Ledesma (<i>Till I Met You</i>, <i>A Long, Long Time Ago</i>), Ric Segreto (<i>Give Me a Chance</i>, <i>Don’t Know What to Do, Don’t Know What to Say</i>), Gary Valenciano (<i>Growing Up</i>), Raymond Lauchengco (<i>Farewell</i>, <i>I Need You Back</i>), Verni Varga (<i>Love Me Again</i>), and Ariel Rivera (<i>Ayoko Na Sana</i>).</p>
+
+      <p>So it’s almost impossible to attend any of her concerts and not get lured into a rousing sing-along session — a feel-good viewer-performer interaction that transforms the concert-going experience into something that feels like a communal undertaking.</p>
+
+      <p>Odette’s compositions, many of them written about 40 years ago, continue to serve her well because songs about romance and heartbreak have a way of resonating with hopeless romantics from different generations. They speak of universal truths and shared experiences that transcend time, gender, social status, or personal circumstance.</p>
+
+
+    <!-- SEE MORE -->
+    <div class="pt-10 border-t">
+  <h4 class="uppercase tracking-widest text-sm text-gray-500 mb-3">
+      See more
+    </h4>
+      <a href="https://www.philstar.com/entertainment/2025/01/28/2417317/odette-60-evolving-musicality-showcased-birthday-concert"
+         target="_blank"
+         class="underline text-sm hover:opacity-70">
+        The Philippine Star
+      </a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ============================
+     BACK BUTTON
+============================= -->
+<div class="text-center pb-20">
+  <a href="Readmore.html#news"
+     class="inline-block px-8 py-3 border rounded-full font-semibold hover:bg-black hover:text-white transition">
+    BACK TO NEWS
+  </a>
+</div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script src="article-scroll.js"></script>
+<!-- JS -->
+<script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+});
+</script>
+
+</body>
+</html>

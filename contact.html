@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Odette Quesada</title>
+
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- HEADER / FOOTER -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<!-- CONTACT SECTION -->
+<section class="max-w-6xl mx-auto px-6 py-24">
+
+  <!-- TABS -->
+  <div class="flex justify-center gap-6 mb-16">
+    <button
+      class="tab-btn px-6 py-2 border rounded-full font-semibold bg-black text-white"
+      data-target="inquiry-form">
+      INQUIRY
+    </button>
+    <button
+      class="tab-btn px-6 py-2 border rounded-full font-semibold"
+      data-target="merch-form">
+      MERCHANDISE
+    </button>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-16">
+
+    <!-- LEFT -->
+    <div class="md:col-span-2">
+
+      <!-- INQUIRY FORM -->
+      <div id="inquiry-form">
+        <h2 class="text-2xl font-semibold mb-8">SEND A MESSAGE</h2>
+
+        <form method="POST" action="send_form.php" class="space-y-6">
+          <input type="hidden" name="type" value="inquiry">
+
+          <div>
+            <label class="block text-sm font-medium mb-1">NAME</label>
+            <input name="name" required
+              class="w-full border px-4 py-3 rounded-lg">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-1">EMAIL</label>
+            <input name="email" type="email" required
+              class="w-full border px-4 py-3 rounded-lg">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-1">SUBJECT</label>
+            <input name="subject" required
+              class="w-full border px-4 py-3 rounded-lg">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-1">MESSAGE</label>
+            <textarea name="message" rows="6" required
+              class="w-full border px-4 py-3 rounded-lg"></textarea>
+          </div>
+
+          <button type="submit"
+            class="px-8 py-3 border rounded-full font-semibold hover:bg-black hover:text-white transition">
+            SEND MESSAGE
+          </button>
+        </form>
+      </div>
+
+      <!-- MERCH FORM -->
+      <div id="merch-form" class="hidden">
+        <h2 class="text-2xl font-semibold mb-8">MERCHANDISE ORDER</h2>
+
+        <form method="POST" action="send_form.php" class="space-y-6">
+          <input type="hidden" name="type" value="merch">
+
+          <div>
+            <label class="block text-sm font-medium mb-1">FULL NAME</label>
+            <input name="fullname" required
+              class="w-full border px-4 py-3 rounded-lg">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-1">PHONE NUMBER</label>
+            <input name="phone" required
+              class="w-full border px-4 py-3 rounded-lg">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-1">ORDER</label>
+            <select name="order" required
+              class="w-full border px-4 py-3 rounded-lg bg-white">
+              <option value="">Choose merchandise</option>
+              <option>T-Shirt</option>
+              <option>Signed Poster</option>
+              <option>CD Album</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-1">ADDRESS</label>
+            <textarea name="address" rows="4" required
+              class="w-full border px-4 py-3 rounded-lg"></textarea>
+          </div>
+
+          <button type="submit"
+            class="px-8 py-3 border rounded-full font-semibold hover:bg-black hover:text-white transition">
+            PLACE ORDER
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="text-center mt-20">
+      <h2 class="text-2xl font-semibold mb-4">CONTACT INFORMATION</h2>
+      <p class="mb-6"><b>Email:</b> odettequesada@gmail.com</p>
+
+      <div class="flex justify-center gap-6 text-xl">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-threads"></i></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<!-- TAB SCRIPT -->
+<script>
+  const tabs = document.querySelectorAll(".tab-btn");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.classList.remove("bg-black","text-white"));
+      document.getElementById("inquiry-form").classList.add("hidden");
+      document.getElementById("merch-form").classList.add("hidden");
+
+      tab.classList.add("bg-black","text-white");
+      document.getElementById(tab.dataset.target).classList.remove("hidden");
+    });
+  });
+</script>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("success") === "1") {
+    alert("✅ Message sent successfully!");
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

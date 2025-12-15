@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odette Quesada | All Hits Concert Series</title>
+
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  
+    <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- HEADER / FOOTER -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    h1, h2 { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<!-- ============================
+     HERO BANNER
+============================= -->
+<section class="relative w-full h-[60vh] md:h-[75vh] overflow-hidden">
+  <img
+    src="images/CPP_2260.jpg"
+    alt="Odette Quesada Banner"
+    class="absolute inset-0 w-full h-full object-cover
+           object-[center_5%] md:object-[center_15%]"
+  >
+  <div class="absolute inset-0 bg-black/30"></div>
+</section>
+
+<!-- ============================
+     PAGE TITLE
+============================= -->
+<section class="py-20 bg-white">
+  <h1 class="text-center
+             text-[2.9rem] md:text-[3.3rem]
+             font-light
+             tracking-[0.42em]
+             uppercase
+             font-['Montserrat']
+             text-black/90">
+    NEWS
+  </h1>
+</section>
+
+<!-- ============================
+     ARTICLE
+============================= -->
+<main class="max-w-4xl mx-auto px-6 pb-24">
+
+  <!-- FEATURE IMAGE -->
+  <div class="mb-12">
+    <img
+      src="images/Article-4.jpg"
+      alt="Odette Quesada performing live"
+      class="w-full rounded-2xl"
+    >
+  </div>
+
+  <!-- ARTICLE HEADER -->
+  <header class="mb-10 text-center">
+    <h2 class="text-2xl md:text-3xl font-semibold leading-snug mb-3">
+      Odette Quesada Marks 40th Anniversary with U.S. Concert Series
+    </h2>
+    <p class="text-sm text-gray-500">
+      Published May 11, 2024
+    </p>
+  </header>
+
+  <!-- ARTICLE BODY -->
+  <article class="space-y-6 text-[15px] md:text-base leading-relaxed text-gray-800">
+
+       <p><b>LOS ANGELES —</b> Filipino composer and songwriter Odette Quesada is known for her timeless hits that have become classics in the Philippine music scene. With a career spanning over four decades, her music continues to captivate audiences worldwide, transcending generations and leaving an indelible mark in the industry.</p>
+
+      <p>Quesada marks her 40th anniversary milestone with <b>“Odette Quesada All Hits Concert Series”</b> on May 11 at the Alex Theatre in Glendale, California, and on May 12 at the Fox Theatre in Redwood City, California. Joining her on stage are special guests <b>Raymond Lauchengco, Felson Palad,</b> and <b>Jaya.</b></p>
+
+      <p>In a recent media huddle to promote the back-to-back shows, <b>ABS-CBN International Head of Events Business Development Kerwin Du</b> said TFC’s goal in bringing events to the U.S. is to showcase world-class Filipino talents on the international stage. “We at TFC consider Miss Odette Quesada as a generational talent, having produced multiple hits since the 80s,” he said.</p>
+
+      <p>With the overwhelming reaction and three sold-out shows in Manila last year, <b>AIP Entertainment Co-Founder Saripaz Villar</b> said they are thrilled to share this anniversary concert with Filipinos all over the world.</p>
+
+      <p>Quesada’s enduring impact on the music industry and her ability to resonate with audiences across different eras is undeniable. Her body of work has inspired countless artists and continues to remind listeners of the beauty and depth of Original Pilipino Music.</p>
+
+
+    <!-- SEE MORE -->
+    <div class="pt-10 border-t">
+      <h4 class="uppercase tracking-widest text-sm text-gray-500 mb-3">
+      See more
+    </h4>
+      <a
+        href="https://usa.inquirer.net/148616/the-inspiration-behind-odette-quesadas-40-years-of-musical-brilliance"
+        target="_blank"
+        class="underline text-sm hover:opacity-70">
+        INQUIRER.NET USA
+      </a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ============================
+     BACK BUTTON
+============================= -->
+<div class="text-center pb-20">
+  <a href="Readmore.html#news"
+     class="inline-block px-8 py-3 border rounded-full font-semibold
+            hover:bg-black hover:text-white transition">
+    BACK TO NEWS
+  </a>
+</div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script src="article-scroll.js"></script>
+
+<!-- JS -->
+<script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+});
+</script>
+
+</body>
+</html>

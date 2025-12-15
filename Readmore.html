@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News | Odette Quesada</title>
+  
+  <link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .hidden { display: none; }
+    .news-btn.active { background:#000; color:#fff; }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<!-- HERO -->
+<section class="relative w-full h-[50vh] md:h-[70vh] overflow-hidden">
+  <img src="images/CPP_2260.jpg"
+       class="w-full h-full object-cover object-[center_5%] md:object-[center_15%]"
+       alt="">
+  <div class="absolute inset-0 bg-black/40"></div>
+</section>
+
+<!-- NEWS -->
+<section class="px-4 md:px-10 lg:px-20 py-12">
+
+  <h1 class="text-4xl md:text-5xl font-light tracking-[0.35em] text-center mb-8"
+    style="font-family:'Montserrat', sans-serif;">
+  NEWS
+</h1>
+
+  <!-- SWITCH -->
+  <div class="flex justify-center gap-4 mb-10">
+    <button class="news-btn active px-6 py-2 border rounded-full text-sm md:text-base" onclick="showNews()">NEWS</button>
+    <button class="news-btn px-6 py-2 border rounded-full text-sm md:text-base" onclick="showArchive()">ARCHIVE</button>
+  </div>
+
+  <!-- NEWS CONTENT -->
+  <!-- NEWS CONTENT -->
+<div id="news-content" class="space-y-24">
+
+  <!-- ITEM 1 — LATEST -->
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <!-- TEXT -->
+    <div class="order-2 md:order-1">
+      <h2 class="text-3xl font-semibold leading-snug mb-4">
+        OPM Icons Odette Quesada and Ogie Alcasid Bring “Love, Q&amp;A”
+      </h2>
+      <p class="text-sm text-gray-500 mb-6">Published: May 28, 2025</p>
+      <a href="Article7.html"
+         class="inline-block px-6 py-3 border rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">
+        READ MORE
+      </a>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="order-1 md:order-2">
+      <img src="images/Article-7.jpg"
+           class="w-full h-[420px] object-cover rounded-xl"
+           alt="">
+    </div>
+  </div>
+
+  <!-- ITEM 2 -->
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+  <div>
+    <img src="images/Article-3.jpg"
+         class="w-full h-auto rounded-xl"
+         alt="">
+  </div>
+
+  <div>
+    <h2 class="text-3xl font-semibold leading-snug mb-4">
+      Odette at 60: Evolving Musicality Showcased in Birthday Concert
+    </h2>
+    <p class="text-sm text-gray-500 mb-6">Published: January 28, 2025</p>
+    <a href="Article3.html"
+       class="inline-block px-6 py-3 border rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">
+      READ MORE
+    </a>
+  </div>
+</div>
+
+  <!-- ITEM 3 -->
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div class="order-2 md:order-1">
+      <h2 class="text-3xl font-semibold leading-snug mb-4">
+        The Inspiration Behind Odette Quesada’s 40 Years of Musical Brilliance
+      </h2>
+      <p class="text-sm text-gray-500 mb-6">Published: April 25, 2024</p>
+      <a href="Article4.html"
+         class="inline-block px-6 py-3 border rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">
+        READ MORE
+      </a>
+    </div>
+    <div class="order-1 md:order-2">
+      <img src="images/Article-4.jpg"
+           class="w-full h-[420px] object-cover rounded-xl"
+           alt="">
+    </div>
+  </div>
+
+  <!-- ITEM 4 -->
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <img src="images/Article-5.jpg"
+           class="w-full h-[420px] object-cover rounded-xl"
+           alt="">
+    </div>
+    <div>
+      <h2 class="text-3xl font-semibold leading-snug mb-4">
+        Odette Quesada’s Music: The Gift That Keeps on Giving
+      </h2>
+      <p class="text-sm text-gray-500 mb-6">Published: November 22, 2023</p>
+      <a href="Article5.html"
+         class="inline-block px-6 py-3 border rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">
+        READ MORE
+      </a>
+    </div>
+  </div>
+
+  <!-- ITEM 5 -->
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div class="order-2 md:order-1">
+      <h2 class="text-3xl font-semibold leading-snug mb-4">
+        Odette Quesada Recalls Early Career Move That Empowered Her as Artist
+      </h2>
+      <p class="text-sm text-gray-500 mb-6">Published: August 29, 2023</p>
+      <a href="Article.html"
+         class="inline-block px-6 py-3 border rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">
+        READ MORE
+      </a>
+    </div>
+    <div class="order-1 md:order-2">
+      <img src="images/Article-1.jpg"
+           class="w-full h-[420px] object-cover rounded-xl"
+           alt="">
+    </div>
+  </div>
+
+  <!-- ITEM 6 — OLDEST -->
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <img src="images/Article-2.jpeg"
+           class="w-full h-[420px] object-cover rounded-xl"
+           alt="">
+    </div>
+    <div>
+      <h2 class="text-3xl font-semibold leading-snug mb-4">
+        40-Year Milestone: Odette Quesada Takes Stock of Her Musical Legacy
+      </h2>
+      <p class="text-sm text-gray-500 mb-6">Published: August 28, 2023</p>
+      <a href="Article2.html"
+         class="inline-block px-6 py-3 border rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">
+        READ MORE
+      </a>
+    </div>
+  </div>
+
+</div>
+
+  <!-- ARCHIVE -->
+  <div id="archive-content" class="hidden">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <img src="images/IMG_5106.JPG" class="w-full aspect-square object-cover rounded-lg" alt="">
+      <img src="images/page2022.jpg" class="w-full aspect-square object-cover rounded-lg" alt="">
+      <img src="images/GIVE ME A CHANCE.jpg" class="w-full aspect-square object-cover rounded-lg" alt="">
+      <img src="images/scanned documents021.jpg" class="w-full aspect-square object-cover rounded-lg" alt="">
+    </div>
+  </div>
+
+  <!-- BACK -->
+  <div class="flex justify-center mt-16">
+    <a href="index.html#news" class="px-6 py-3 border rounded-full text-sm font-semibold">
+      BACK TO HOME
+    </a>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+<script src="script.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const newsContent = document.getElementById("news-content");
+  const archiveContent = document.getElementById("archive-content");
+  const btns = document.querySelectorAll(".news-btn");
+
+  function scrollToSection(target) {
+    setTimeout(() => {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }, 50);
+  }
+
+  function showNews() {
+    newsContent.classList.remove("hidden");
+    archiveContent.classList.add("hidden");
+
+    btns[0].classList.add("active");
+    btns[1].classList.remove("active");
+
+    scrollToSection(newsContent);
+  }
+
+  function showArchive() {
+    newsContent.classList.add("hidden");
+    archiveContent.classList.remove("hidden");
+
+    btns[0].classList.remove("active");
+    btns[1].classList.add("active");
+
+    scrollToSection(archiveContent);
+  }
+
+  // expose functions to inline onclick
+  window.showNews = showNews;
+  window.showArchive = showArchive;
+
+  // 🔽 AUTO SCROLL ON PAGE LOAD
+  setTimeout(() => {
+    scrollToSection(newsContent);
+  }, 300);
+
+});
+</script>
+
+</body>
+</html>

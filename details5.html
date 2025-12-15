@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QUESADA – Odette Quesada</title>
+
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- HEADER / FOOTER -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <style>
+    body { font-family: 'Josefin Sans', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<!-- HERO -->
+<section class="relative w-full h-[55vh] md:h-[70vh] overflow-hidden">
+  <img src="images/EOSR7769.jpg"
+       class="absolute inset-0 w-full h-full object-cover object-center"
+       alt="">
+  <div class="absolute inset-0 bg-black/40"></div>
+</section>
+
+<!-- TITLE -->
+<section class="py-16 text-center">
+  <h1 class="text-4xl md:text-5xl tracking-widest font-semibold">
+    QUESADA
+  </h1>
+</section>
+
+<!-- CONTENT -->
+<section class="max-w-6xl mx-auto px-6 pb-24 space-y-20">
+
+  <!-- DESCRIPTION -->
+  <div class="max-w-3xl mx-auto text-[15px] leading-relaxed text-gray-800">
+
+    <p id="album-desc"
+       class="
+         md:max-h-none
+         max-h-[110px]
+         overflow-hidden
+         transition-all
+         duration-300
+       ">
+
+      The 1990 release of the album <b>Quesada</b> signifies a pivotal moment
+      in Odette Quesada’s artistic trajectory, consolidating her position
+      as a premier OPM figure. This album formally marks the beginning of
+      her celebrated songwriting partnership with her husband,
+      <b>Bodjie Dasig</b>.
+      <br><br>
+      Its robust production and cohesive songwriting reflect a rapidly
+      maturing artistic voice, blending intimate piano-driven ballads
+      with contemporary early-1990s influences. The collection features
+      deeply personal compositions that offer insight into both her
+      creative and romantic journey.
+      <br><br>
+      The track <i>“Dito Lang”</i> represents her first formal collaboration
+      with Bodjie Dasig. Odette wrote the verses, while Bodjie crafted the
+      now-iconic chorus—becoming the genesis of their successful
+      professional partnership.
+      <br><br>
+      Meanwhile, <i>“Wala Nang Nasa Isip”</i> captures a profound emotional
+      milestone. Though initially written independently, seeking Bodjie’s
+      help to complete the song led Odette to realize she was falling in
+      love—an awakening quietly woven into the lyrics.
+      <br><br>
+      Ultimately, <b>Quesada</b> serves as a vital artistic bridge between
+      her Metropop-era breakthrough and her later collaborative works,
+      standing as a timeless chronicle of her evolution as both an artist
+      and partner.
+    </p>
+
+    <!-- MOBILE BUTTON -->
+    <div class="text-center mt-6 md:hidden">
+      <button id="seeMoreBtn"
+        class="px-6 py-2 border rounded-full text-sm font-medium">
+        See More
+      </button>
+    </div>
+
+  </div>
+
+  <!-- ALBUM + TRACKLIST -->
+  <div class="grid md:grid-cols-2 gap-16 items-start">
+
+    <!-- COVER -->
+    <div class="flex justify-center">
+      <div class="relative">
+        <img src="images/Quesada BMG 1990.jpg"
+             class="w-[320px] rounded-xl shadow-lg"
+             alt="Quesada Album Cover">
+      </div>
+    </div>
+
+    <!-- TRACKLIST -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-6">Track List</h2>
+
+      <ul class="space-y-2 text-sm">
+        <li class="hover:underline">Dito Lang</li>
+        <li class="hover:underline">Ganito Pala</li>
+        <li class="hover:underline">Ako’y Maghihintay</li>
+        <li class="hover:underline">Amin Mo Na</li>
+        <li class="hover:underline">I’m Telling You Baby</li>
+        <li class="hover:underline">Start Tonight</li>
+        <li class="hover:underline">I Can’t Go On</li>
+        <li class="hover:underline">Pag Katabi Kita</li>
+        <li class="hover:underline">Get Serious</li>
+        <li class="hover:underline">Wala Nang Nasa Isip</li>
+      </ul>
+
+      <!-- LISTEN -->
+      <div class="mt-8">
+        <a href="https://music.youtube.com/channel/UCcWq-cca4d_mjQvIimi1UqQ"
+           target="_blank"
+           class="inline-block px-8 py-3 border rounded-full font-medium">
+          🎧 LISTEN NOW
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BACK -->
+  <div class="text-center pt-20">
+    <a href="music.html#albums"
+       class="px-8 py-3 border rounded-full font-medium">
+      BACK TO ALBUMS
+    </a>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<!-- JS -->
+<script src="details-scroll.js"></script>
+<script src="script.js"></script>
+
+<script>
+  const desc = document.getElementById("album-desc");
+  const btn = document.getElementById("seeMoreBtn");
+
+  btn.addEventListener("click", () => {
+    const expanded = desc.classList.toggle("expanded");
+
+    if (expanded) {
+      desc.classList.remove("max-h-[110px]");
+      desc.classList.add("max-h-[2000px]");
+      btn.textContent = "See Less";
+    } else {
+      desc.classList.remove("max-h-[2000px]");
+      desc.classList.add("max-h-[110px]");
+      btn.textContent = "See More";
+    }
+  });
+</script>
+
+</body>
+</html>

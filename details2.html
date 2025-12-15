@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SA’YO PA RIN – Odette Quesada</title>
+
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- HEADER / FOOTER -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <style>
+    body { font-family: 'Josefin Sans', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<!-- HERO -->
+<section class="relative w-full h-[55vh] md:h-[70vh] overflow-hidden">
+  <img src="images/EOSR7769.jpg"
+       class="absolute inset-0 w-full h-full object-cover object-center"
+       alt="">
+  <div class="absolute inset-0 bg-black/40"></div>
+</section>
+
+<!-- TITLE -->
+<section class="py-16 text-center">
+  <h1 class="text-4xl md:text-5xl tracking-widest font-semibold">
+    SA’YO PA RIN
+  </h1>
+</section>
+
+<!-- CONTENT -->
+<section class="max-w-6xl mx-auto px-6 pb-24 space-y-20">
+
+  <!-- DESCRIPTION -->
+  <div class="max-w-3xl mx-auto text-[15px] leading-relaxed text-gray-800">
+
+    <p id="album-desc"
+       class="
+         md:max-h-none
+         max-h-[110px]
+         overflow-hidden
+         transition-all
+         duration-300
+       ">
+
+      Released in 1997, <b>Sa’yo Pa Rin</b> marks a profoundly personal and
+      creatively rich period in Odette Quesada’s career, defining her
+      presence in the late-90s OPM landscape. This album blends her iconic
+      ballad sensibility with refined production, capturing themes of
+      enduring love and commitment.
+      <br><br>
+      The album’s creation was influenced by her life at home after having
+      a baby. The track <i>“I Cry”</i> was conceived while soothing her
+      crying son, with the melody forming between the rain and quiet
+      moments. <i>“I Love You More Now”</i> came from observing how love
+      evolves as children grow.
+      <br><br>
+      The album also features <i>“Bye-bye”</i>, which Odette considers her
+      <b>“retirement song”</b>—a reflection on stepping away from the
+      spotlight to focus on motherhood. Ironically, its lyrics would later
+      predict her return:
+      <br><br>
+      <i>
+        “But I know, I’ll be back, and I’ll be here to stay,<br>
+        and I know, you’ll be there to help me find my way.”
+      </i>
+      <br><br>
+      A defining record of late-90s OPM elegance, this album showcases
+      maturity, restraint, and emotional depth that remains timeless.
+    </p>
+
+    <!-- MOBILE BUTTON -->
+    <div class="text-center mt-6 md:hidden">
+      <button id="seeMoreBtn"
+        class="px-6 py-2 border rounded-full text-sm font-medium">
+        See More
+      </button>
+    </div>
+
+  </div>
+
+  <!-- ALBUM + TRACKLIST -->
+  <div class="grid md:grid-cols-2 gap-16 items-start">
+
+    <!-- COVER -->
+    <div class="flex justify-center">
+      <div class="relative">
+        <img src="images/IMG_00010-scaled.webp"
+             class="w-[320px] rounded-xl shadow-lg"
+             alt="">
+      </div>
+    </div>
+
+    <!-- TRACKLIST -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-6">Track List</h2>
+
+      <ul class="space-y-2 text-sm">
+        <li class="hover:underline">SA’YO PA RIN</li>
+        <li class="hover:underline">KUNG MABIBISTO MO</li>
+        <li class="hover:underline">I CRY</li>
+        <li class="hover:underline">BE WITH YOU</li>
+        <li class="hover:underline">I LOVE YOU MORE NOW</li>
+        <li class="hover:underline">SABI NILA</li>
+        <li class="hover:underline">BEACON IN THE NIGHT</li>
+        <li class="hover:underline">MAYBE IT’S YOU</li>
+        <li class="hover:underline">WEPT ME OFF MY FEET</li>
+        <li class="hover:underline">BYE BYE</li>
+      </ul>
+
+      <!-- LISTEN -->
+      <div class="mt-8">
+        <a href="https://open.spotify.com/album/4cWgVSyEfmUL05r1IXPGCy"
+           target="_blank"
+           class="inline-block px-8 py-3 border rounded-full font-medium">
+          🎧 LISTEN NOW
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BACK -->
+  <div class="text-center pt-20">
+    <a href="music.html#albums"
+       class="px-8 py-3 border rounded-full font-medium">
+      BACK TO ALBUMS
+    </a>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script src="details-scroll.js"></script>
+<script src="script.js"></script>
+
+<script>
+  const desc = document.getElementById("album-desc");
+  const btn = document.getElementById("seeMoreBtn");
+
+  btn.addEventListener("click", () => {
+    const expanded = desc.classList.toggle("expanded");
+
+    if (expanded) {
+      desc.classList.remove("max-h-[110px]");
+      desc.classList.add("max-h-[2000px]");
+      btn.textContent = "See Less";
+    } else {
+      desc.classList.remove("max-h-[2000px]");
+      desc.classList.add("max-h-[110px]");
+      btn.textContent = "See More";
+    }
+  });
+</script>
+
+</body>
+</html>

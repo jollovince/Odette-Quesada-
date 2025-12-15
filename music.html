@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music - Odette Quesada</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+body { font-family: 'Poppins', sans-serif; }
+.music-section { padding-bottom: 8rem; }
+</style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+<div id="header"></div>
+
+<!-- BANNER -->
+<section class="w-full h-[65vh] overflow-hidden">
+  <img src="images/OQ B_W piano.jpg" class="w-full h-full object-cover">
+</section>
+
+<!-- TITLE + NAV -->
+<section class="py-20">
+  <h1 class="text-center text-[3rem] tracking-[0.2em] uppercase font-light font-['Montserrat']">
+    MUSIC
+  </h1>
+
+  <div class="flex justify-center gap-4 flex-wrap mt-10">
+    <button class="nav-btn active px-6 py-2 border rounded-full"
+      onclick="showSection('newrelease', this)">NEW RELEASES</button>
+    <button class="nav-btn px-6 py-2 border rounded-full"
+      onclick="showSection('albums', this)">ALBUMS</button>
+    <button class="nav-btn px-6 py-2 border rounded-full"
+      onclick="showSection('awards', this)">AWARDS</button>
+  </div>
+</section>
+
+<!-- ================= NEW RELEASES ================= -->
+<section id="newrelease" class="music-section block">
+  <div class="max-w-6xl mx-auto px-6 space-y-28">
+
+    <!-- ZERO GRAVITY -->
+    <div class="grid md:grid-cols-2 gap-14 items-center">
+      <a href="zero-gravity.html">
+        <img src="images/zerogravity.jpg" class="rounded-xl w-full" alt="">
+      </a>
+
+      <div class="space-y-6">
+        <p>
+          Odette celebrates her 60th birthday with a powerful performance
+          featuring her timeless hits.
+        </p>
+
+        <div class="flex gap-6 flex-wrap items-center">
+          <div class="relative">
+            <button class="listen-btn px-6 py-2 border rounded-full">
+              LISTEN NOW <i class="fa-solid fa-caret-down ml-2"></i>
+            </button>
+            <div class="dropdown-content absolute hidden bg-white border rounded-xl shadow-lg mt-3 w-44">
+              <a class="block px-4 py-2" href="#">Spotify</a>
+              <a class="block px-4 py-2" href="#">Apple Music</a>
+              <a class="block px-4 py-2" href="#">YouTube Music</a>
+            </div>
+          </div>
+
+          <a href="#"
+             class="px-6 py-2 border rounded-full hover:bg-black hover:text-white transition">
+            WATCH NOW
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MISS YOU SO (ALTERNATE DESKTOP) -->
+    <div class="grid md:grid-cols-2 gap-14 items-center">
+
+      <!-- IMAGE -->
+      <a href="miss-you-so.html" class="md:order-2">
+        <img src="images/miss u so.jpg" class="rounded-xl w-full" alt="">
+      </a>
+
+      <!-- TEXT -->
+      <div class="space-y-6 md:order-1">
+        <p>
+          Her discography continues to define generations of OPM listeners
+          through heartfelt lyrics.
+        </p>
+
+        <div class="flex gap-6 flex-wrap items-center">
+          <div class="relative">
+            <button class="listen-btn px-6 py-2 border rounded-full">
+              LISTEN NOW <i class="fa-solid fa-caret-down ml-2"></i>
+            </button>
+            <div class="dropdown-content absolute hidden bg-white border rounded-xl shadow-lg mt-3 w-44">
+              <a class="block px-4 py-2" href="https://open.spotify.com/track/5quHAMyUvRtAFuot1ivvCk">Spotify</a>
+              <a class="block px-4 py-2" href="https://music.apple.com/us/album/miss-you-so-live-single/1709887943">Apple Music</a>
+              <a class="block px-4 py-2" href="https://music.youtube.com/watch?v=zhzT93tKSCI">YouTube Music</a>
+            </div>
+          </div>
+
+          <a href="https://youtu.be/zhzT93tKSCI"
+             class="px-6 py-2 border rounded-full hover:bg-black hover:text-white transition">
+            WATCH NOW
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- TUWING PASKO -->
+    <div class="grid md:grid-cols-2 gap-14 items-center">
+      <a href="tuwing-pasko.html">
+        <img src="images/Post.jpg" class="rounded-xl w-full" alt="">
+      </a>
+
+      <div class="space-y-6">
+        <p>
+          A timeless Christmas piece celebrating love, warmth,
+          and the spirit of coming home.
+        </p>
+
+        <div class="flex gap-6 flex-wrap items-center">
+          <div class="relative">
+            <button class="listen-btn px-6 py-2 border rounded-full">
+              LISTEN NOW <i class="fa-solid fa-caret-down ml-2"></i>
+            </button>
+            <div class="dropdown-content absolute hidden bg-white border rounded-xl shadow-lg mt-3 w-44">
+              <a class="block px-4 py-2" href="https://open.spotify.com/album/7ihMCcBDw9ABGhN2oM9hY9">Spotify</a>
+              <a class="block px-4 py-2" href="https://music.apple.com/us/song/tuwing-pasko/1855600622">Apple Music</a>
+              <a class="block px-4 py-2" href="https://music.youtube.com/watch?v=ViBx5KEhMtg">YouTube Music</a>
+            </div>
+          </div>
+
+          <a href="https://youtu.be/KqqDtXBDnZU"
+             class="px-6 py-2 border rounded-full hover:bg-black hover:text-white transition">
+            WATCH NOW
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ================= ALBUMS (RESTORED) ================= -->
+<section id="albums" class="music-section hidden">
+  <div class="max-w-6xl mx-auto px-6 py-24
+              grid sm:grid-cols-2 md:grid-cols-3 gap-12">
+
+    <!-- 1. IM PERFECT -->
+    <div class="text-center space-y-3">
+      <a href="details.html">
+        <img src="images/IMG_00007-scaled.webp"
+             class="rounded-xl w-full hover:opacity-90 transition">
+      </a>
+      <h3 class="font-semibold">IM PERFECT</h3>
+      <p class="text-sm text-gray-500">Gravity Music (2015)</p>
+      <a href="https://open.spotify.com/album/5mTJLJSvx2MCnzXta3x8GL"
+         target="_blank"
+         class="inline-block mt-2 px-6 py-2 border rounded-full text-sm font-medium
+                hover:bg-black hover:text-white transition">
+        LISTEN
+      </a>
+    </div>
+
+    <!-- 2. SA 'YO PA RIN -->
+    <div class="text-center space-y-3">
+      <a href="details2.html">
+        <img src="images/IMG_00010-scaled.webp"
+             class="rounded-xl w-full hover:opacity-90 transition">
+      </a>
+      <h3 class="font-semibold">SA 'YO PA RIN</h3>
+      <p class="text-sm text-gray-500">Alpha Records (1997)</p>
+      <a href="https://open.spotify.com/album/4cWgVSyEfmUL05r1IXPGCy"
+         target="_blank"
+         class="inline-block mt-2 px-6 py-2 border rounded-full text-sm font-medium
+                hover:bg-black hover:text-white transition">
+        LISTEN
+      </a>
+    </div>
+
+    <!-- 3. CARELESS -->
+    <div class="text-center space-y-3">
+      <a href="details3.html">
+        <img src="images/IMG_00001-scaled-e1747493129867.webp"
+             class="rounded-xl w-full hover:opacity-90 transition">
+      </a>
+      <h3 class="font-semibold">CARELESS</h3>
+      <p class="text-sm text-gray-500">BMG Records (1992)</p>
+      <a href="https://music.youtube.com/channel/UCcWq-cca4d_mjQvIimi1UqQ"
+         target="_blank"
+         class="inline-block mt-2 px-6 py-2 border rounded-full text-sm font-medium
+                hover:bg-black hover:text-white transition">
+        LISTEN
+      </a>
+    </div>
+
+    <!-- 4. QUESADA -->
+    <div class="text-center space-y-3">
+      <a href="details5.html">
+        <img src="images/Quesada BMG 1990.jpg"
+             class="rounded-xl w-full hover:opacity-90 transition">
+      </a>
+      <h3 class="font-semibold">QUESADA</h3>
+      <p class="text-sm text-gray-500">BMG Records (1989)</p>
+      <a href="https://music.youtube.com/channel/UCcWq-cca4d_mjQvIimi1UqQ"
+         target="_blank"
+         class="inline-block mt-2 px-6 py-2 border rounded-full text-sm font-medium
+                hover:bg-black hover:text-white transition">
+        LISTEN
+      </a>
+    </div>
+
+    <!-- 5. FREE & EASY -->
+    <div class="text-center space-y-3">
+      <a href="details6.html">
+        <img src="images/IMG_00002-scaled-e1747493023703.webp"
+             class="rounded-xl w-full hover:opacity-90 transition">
+      </a>
+      <h3 class="font-semibold">FREE & EASY</h3>
+      <p class="text-sm text-gray-500">BMG Records (1985)</p>
+      <a href="https://music.youtube.com/channel/UCcWq-cca4d_mjQvIimi1UqQ"
+         target="_blank"
+         class="inline-block mt-2 px-6 py-2 border rounded-full text-sm font-medium
+                hover:bg-black hover:text-white transition">
+        LISTEN
+      </a>
+    </div>
+
+    <!-- 6. HOPELESS ROMANTIC -->
+    <div class="text-center space-y-3">
+      <a href="details4.html">
+        <img src="images/IMG_00004-scaled.webp"
+             class="rounded-xl w-full hover:opacity-90 transition">
+      </a>
+      <h3 class="font-semibold">HOPELESS ROMANTIC</h3>
+      <p class="text-sm text-gray-500">Black Gold (1984)</p>
+      <a href="https://open.spotify.com/album/1YAh3P5ZthNwMFHLdozJfi"
+         target="_blank"
+         class="inline-block mt-2 px-6 py-2 border rounded-full text-sm font-medium
+                hover:bg-black hover:text-white transition">
+        LISTEN
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= AWARDS (RESTORED) ================= -->
+<section id="awards" class="music-section hidden">
+<div class="max-w-6xl mx-auto px-6 py-24 space-y-24">
+
+<div class="grid md:grid-cols-3 gap-10 items-center">
+  <img src="images/GEL_5354.JPG" class="rounded-xl w-full">
+  <div>
+    <h3 class="font-semibold">AWIT AWARDS</h3>
+    <p>Record of the Year<br><strong>SANA DALAWA ANG PUSO KO</strong></p>
+  </div>
+  <div class="text-5xl font-bold text-right">1993</div>
+</div>
+
+<div class="grid md:grid-cols-3 gap-10 items-center">
+  <div class="text-5xl font-bold">1985</div>
+  <div>
+    <h3 class="font-semibold">8TH METRO POP</h3>
+    <p>2nd Place<br><strong>YOU’RE MY HOME</strong></p>
+  </div>
+  <img src="images/GEL_5358.JPG" class="rounded-xl w-full">
+</div>
+
+<div class="grid md:grid-cols-3 gap-10 items-center">
+  <img src="images/CECIL-AWARDS-scaled.webp" class="rounded-xl w-full">
+  <div>
+    <h3 class="font-semibold">CECIL AWARDS</h3>
+    <p>Best Disco Compilation<br><strong>GROWING UP</strong></p>
+  </div>
+  <div class="text-5xl font-bold text-right">1984</div>
+</div>
+
+<div class="grid md:grid-cols-3 gap-10 items-center">
+  <div class="text-5xl font-bold">1983</div>
+  <div>
+    <h3 class="font-semibold">6TH METRO POP</h3>
+    <p>Grand Prize – Professional<br><strong>TILL I MET YOU</strong></p>
+  </div>
+  <img src="images/GEL_5357.JPG" class="rounded-xl w-full">
+</div>
+
+<div class="grid md:grid-cols-3 gap-10 items-center">
+  <img src="images/GEL_5357.JPG" class="rounded-xl w-full">
+  <div>
+    <h3 class="font-semibold">5TH METRO POP</h3>
+    <p>2nd Prize – Amateur<br><strong>GIVE ME A CHANCE</strong></p>
+  </div>
+  <div class="text-5xl font-bold text-right">1982</div>
+</div>
+
+</div>
+</section>
+
+<div id="footer"></div>
+
+<!-- ================= JS ================= -->
+<script>
+function showSection(id, btn) {
+  document.querySelectorAll('.music-section').forEach(s => {
+    s.style.display = 'none';
+  });
+
+  document.querySelectorAll('.nav-btn').forEach(b => {
+    b.classList.remove('active');
+  });
+
+  const section = document.getElementById(id);
+  section.style.display = 'block';
+
+  if (btn) btn.classList.add('active');
+
+  setTimeout(() => {
+    section.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }, 50);
+}
+
+// ✅ AUTO SCROLL ON PAGE LOAD (MUSIC)
+window.addEventListener('load', () => {
+  const defaultSection = document.getElementById('newrelease');
+  if (!defaultSection) return;
+
+  setTimeout(() => {
+    defaultSection.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }, 300);
+});
+
+document.querySelectorAll('.listen-btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    const menu = btn.nextElementSibling;
+    document.querySelectorAll('.dropdown-content')
+      .forEach(d => d !== menu && d.classList.add('hidden'));
+    menu.classList.toggle('hidden');
+  });
+});
+
+document.addEventListener('click', () => {
+  document.querySelectorAll('.dropdown-content')
+    .forEach(d => d.classList.add('hidden'));
+});
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

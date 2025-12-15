@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IM PERFECT – Odette Quesada</title>
+
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- HEADER / FOOTER (KEEP) -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <style>
+    body { font-family: 'Josefin Sans', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<!-- HERO -->
+<section class="relative w-full h-[55vh] md:h-[70vh] overflow-hidden">
+  <img src="images/EOSR7769.jpg"
+       class="absolute inset-0 w-full h-full object-cover object-center"
+       alt="">
+  <div class="absolute inset-0 bg-black/40"></div>
+</section>
+
+<!-- TITLE -->
+<section class="py-16 text-center">
+  <h1 class="text-4xl md:text-5xl tracking-widest font-semibold">
+    IM PERFECT
+  </h1>
+</section>
+
+<!-- CONTENT -->
+<section class="max-w-6xl mx-auto px-6 pb-24 space-y-20">
+
+  <div class="max-w-3xl mx-auto text-[15px] leading-relaxed text-gray-800">
+
+  <p id="album-desc"
+     class="
+       md:max-h-none
+       max-h-[110px]
+       overflow-hidden
+       transition-all
+       duration-300
+     ">
+
+    IM PERFECT is a beautiful declaration, an album of grace and introspection
+    released in 2015, showcasing the artistry of a master storyteller.
+    Odette Quesada steps back to the microphone to share compositions
+    originating from stillness and life experience, delivering new classics
+    that feel instantly familiar and demonstrating that her songwriting
+    remains profoundly personal. The compositions are intimate and often
+    stripped down, yet rich with the raw emotion that has consistently
+    characterized her work.
+    <br><br>
+    This collection is a gift of vulnerability, offering tracks that resonate
+    with the struggles and triumphs of modern life. Notable inclusions are the
+    deeply personal and therapeutic piece <i>I Start to Cry</i>, which was
+    written to process the grief following the passing of her grandmother,
+    and the charming, whimsical track <i>Starlight</i>, which originated from
+    a playful challenge with Bodjie Dasig to compose a song that sounded like
+    it came out of a Disney movie.
+    <br><br>
+    Furthermore, the album features the song <i>“My Favorite Story.”</i>
+    Co-written with Bodjie Dasig, this piece holds a unique position in
+    Quesada’s catalog, as its inspiration was drawn directly from their son,
+    Darian. It stands as a loving homage to a child, encapsulated by the
+    heartfelt lyric: “You were my favorite story, my favorite song, you were
+    the main event in my life all along.”
+  </p>
+
+  <!-- BUTTON: MOBILE ONLY -->
+  <div class="text-center mt-6 md:hidden">
+    <button id="seeMoreBtn"
+      class="px-6 py-2 border rounded-full text-sm font-medium">
+      See More
+    </button>
+  </div>
+
+</div>
+
+  <!-- ALBUM + TRACKLIST -->
+  <div class="grid md:grid-cols-2 gap-16 items-start">
+
+    <!-- COVER -->
+    <div class="flex justify-center">
+      <div class="relative">
+        <img src="images/IMG_00007-scaled.webp"
+             class="w-[320px] rounded-xl shadow-lg"
+             alt="">
+     
+      </div>
+    </div>
+
+    <!-- TRACKLIST -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-6">Track List</h2>
+
+      <ul class="space-y-2 text-sm">
+  <li class="hover:underline">Belong to You</li>
+  <li class="hover:underline">What Would I Do</li>
+  <li class="hover:underline">Love Will Always Win</li>
+  <li class="hover:underline">I Start to Cry</li>
+  <li class="hover:underline">Something About You</li>
+  <li class="hover:underline">Mr. Now & Then</li>
+  <li class="hover:underline">My Favorite Story</li>
+  <li class="hover:underline">What Would It Take</li>
+  <li class="hover:underline">Starlight</li>
+  <li class="hover:underline">When You Were Here With Me</li>
+</ul>
+
+
+      <!-- LISTEN -->
+      <div class="mt-8">
+        <a href="https://open.spotify.com/album/5mTJLJSvx2MCnzXta3x8GL"
+           target="_blank"
+           class="inline-block px-8 py-3 border rounded-full font-medium">
+          🎧 LISTEN NOW
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BACK -->
+  <div class="text-center pt-20">
+    <a href="music.html#albums"
+       class="px-8 py-3 border rounded-full font-medium">
+      BACK TO ALBUMS
+    </a>
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script src="details-scroll.js"></script>
+
+<!-- JS -->
+<script src="album/album.js"></script>
+<script src="script.js"></script>
+
+<script>
+  const desc = document.getElementById("album-desc");
+  const btn = document.getElementById("seeMoreBtn");
+
+  btn.addEventListener("click", () => {
+    const expanded = desc.classList.toggle("expanded");
+
+    if (expanded) {
+      desc.classList.remove("max-h-[110px]");
+      desc.classList.add("max-h-[2000px]");
+      btn.textContent = "See Less";
+    } else {
+      desc.classList.remove("max-h-[2000px]");
+      desc.classList.add("max-h-[110px]");
+      btn.textContent = "See More";
+    }
+  });
+</script>
+
+
+
+</body>
+</html>

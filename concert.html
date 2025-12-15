@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Concert & Videos</title>
+
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- HEADER / FOOTER -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<!-- ============================
+     PAGE TITLE
+============================= -->
+<section class="py-20 bg-white">
+  <h1 class="text-center
+             text-[2.9rem] md:text-[3.3rem]
+             font-light
+             tracking-[0.20em]
+             uppercase
+             font-['Montserrat']
+             text-black/90">
+    CONCERTS
+  </h1>
+</section>
+
+<!-- ============================
+     SWITCH (ALWAYS VISIBLE)
+============================= -->
+<div class="flex justify-center gap-4 mb-20">
+  <button
+    id="btn-concert"
+    onclick="showConcert()"
+    class="px-7 py-2 rounded-full border font-semibold
+           bg-black text-white transition">
+    Concerts
+  </button>
+
+  <button
+    id="btn-video"
+    onclick="showVideo()"
+    class="px-7 py-2 rounded-full border font-semibold
+           bg-white text-black transition">
+    Reviews 
+  </button>
+</div>
+
+<!-- ============================
+     CONCERT SECTION
+============================= -->
+<section id="concert-section" class="max-w-7xl mx-auto px-4 md:px-10 pb-24">
+
+ <!-- MAIN POSTER (NO BLACK, FULL IMAGE) -->
+<a href="gallery.html" class="block mb-28">
+  <div class="relative w-full h-[55vh] md:h-[70vh] overflow-hidden rounded-2xl bg-transparent">
+    <img src="images/concert/concert.jpg"
+         class="absolute inset-0 w-full h-full object-contain"
+         alt="">
+  </div>
+</a>
+
+
+
+
+  <!-- YEAR BLOCK -->
+  <div class="space-y-32">
+
+ <!-- 2025 -->
+<div>
+  <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] my-24">
+  <h2 class="text-center text-3xl font-bold py-10 bg-gray-100 border-y border-gray-300 tracking-widest">
+    2025
+  </h2>
+</div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    
+    <!-- SOLO POSTER (CENTERED ON DESKTOP) -->
+    <div class="lg:col-span-3 flex justify-center">
+      <div class="relative group overflow-hidden rounded-xl w-full max-w-[380px]">
+        <img src="images/concert/509680418_18506180587058523_5582067817603018584_n.jpg"
+             class="w-full h-[420px] object-cover"
+             loading="lazy">
+        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition
+                    flex flex-col justify-end p-6">
+          <h3 class="text-white font-semibold">Love, Q&A</h3>
+          <p class="text-white text-sm">
+            June 22, 2025 — Choctaw Casino, Oklahoma
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <!-- 2024 -->
+<div>
+  <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] my-24">
+  <h2 class="text-center text-3xl font-bold py-10 bg-gray-100 border-y border-gray-300 tracking-widest">
+    2024
+  </h2>
+</div>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- CARD -->
+    <div class="relative group rounded-xl overflow-hidden">
+      <img src="images/concert/470096730_18469482808058523_3822910390550927443_n.jpg"
+           class="w-full h-auto block">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-6">
+        <h3 class="text-white font-semibold">Love & A</h3>
+        <p class="text-white text-sm">Dec 28–29, 2024 — Graton Casino</p>
+      </div>
+    </div>
+
+    <div class="relative group rounded-xl overflow-hidden">
+      <img src="images/concert/OQ2024-Main-Poster-Houston-Instagram-1080x1080px.png"
+           class="w-full h-auto block">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-6">
+        <h3 class="text-white font-semibold">U.S. Tour</h3>
+        <p class="text-white text-sm">Oct 25, 2024 — Houston</p>
+      </div>
+    </div>
+
+    <div class="relative group rounded-xl overflow-hidden">
+      <img src="images/concert/OQ2024-Main-Poster-Chicago-Instagram-1080x1080px-with-Front-Act.png"
+           class="w-full h-auto block">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-6">
+        <h3 class="text-white font-semibold">U.S. Tour</h3>
+        <p class="text-white text-sm">Oct 20, 2024 — Chicago</p>
+      </div>
+    </div>
+
+    <div class="relative group rounded-xl overflow-hidden">
+      <img src="images/concert/OQ2024-Main-Poster-Atlantic-City-Instagram-1080x1080px-Ad.png"
+           class="w-full h-auto block">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-6">
+        <h3 class="text-white font-semibold">U.S. Tour</h3>
+        <p class="text-white text-sm">Oct 18, 2024 — Atlantic City</p>
+      </div>
+    </div>
+
+    <div class="relative group rounded-xl overflow-hidden">
+      <img src="images/concert/OQ2024-Main-Poster-Hawaii-Instagram-1080x1080px.png"
+           class="w-full h-auto block">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-6">
+        <h3 class="text-white font-semibold">U.S. Tour</h3>
+        <p class="text-white text-sm">Oct 11, 2024 — Waikiki</p>
+      </div>
+    </div>
+
+    <div class="relative group rounded-xl overflow-hidden">
+      <img src="images/concert/476787649_18480281011058523_7418175633255627575_n.jpg"
+           class="w-full h-auto block">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-6">
+        <h3 class="text-white font-semibold">Sky River Casino Anniversary</h3>
+        <p class="text-white text-sm">Sept 8, 2024 — California</p>
+      </div>
+    </div>
+
+    <div class="relative group rounded-xl overflow-hidden">
+      <img src="images/concert/490129560_1257422636390246_4220217941723294510_n.jpg"
+           class="w-full h-auto block">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-6">
+        <h3 class="text-white font-semibold">Love & A</h3>
+        <p class="text-white text-sm">Feb 14–15, 2024 — NEWPORT PERFORMING ARTS THEATER</p>
+      </div>
+    </div>
+
+    <div class="relative group rounded-xl overflow-hidden">
+      <img src="images/concert/490574081_1258134452985731_3559243431327099601_n.jpg"
+           class="w-full h-auto block">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-6">
+        <h3 class="text-white font-semibold">Love & A</h3>
+        <p class="text-white text-sm">Feb 13, 2024 — NUSTAR, Cebu</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div>
+  <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] my-24">
+  <h2 class="text-center text-3xl font-bold py-10 bg-gray-100 border-y border-gray-300 tracking-widest">
+    2023
+  </h2>
+</div>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- Nov 24, 2023 — LATEST -->
+    <div class="relative group overflow-hidden rounded-xl">
+      <img src="images/concert/OQ the Repeat.jpg"
+           class="w-full h-[420px] object-cover">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-6">
+        <h3 class="text-white font-semibold">The Repeat</h3>
+        <p class="text-white text-sm">Nov 24, 2023 — Samsung Performing Arts Theater</p>
+      </div>
+    </div>
+
+    <!-- Sept 1, 2023 -->
+    <div class="relative group overflow-hidden rounded-xl">
+      <img src="images/concert/POSTER.jpg"
+           class="w-full h-[420px] object-cover">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-6">
+        <h3 class="text-white font-semibold">40th Anniversary Celebration</h3>
+        <p class="text-white text-sm">Sept 1, 2023 — Newport, Manila</p>
+      </div>
+    </div>
+
+    <!-- May 11–12, 2023 — OLDEST -->
+    <div class="relative group overflow-hidden rounded-xl">
+      <img src="images/concert/OQ Poster.jpg"
+           class="w-full h-[420px] object-cover">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-6">
+        <h3 class="text-white font-semibold">40th Anniversary Celebration</h3>
+        <p class="text-white text-sm">May 11–12, 2023 — California</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <!-- 2022 -->
+<div>
+<div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] my-24">
+  <h2 class="text-center text-3xl font-bold py-10 bg-gray-100 border-y border-gray-300 tracking-widest">
+    2022
+  </h2>
+</div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- SOLO POSTER (CENTERED ON DESKTOP) -->
+    <div class="lg:col-span-3 flex justify-center">
+      <div class="relative group overflow-hidden rounded-xl w-full max-w-[380px]">
+        <img src="images/concert/285647964_2405216152949926_3200774063447363214_n.jpg"
+             class="w-full h-auto block"
+             loading="lazy">
+
+        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition
+                    flex flex-col justify-end p-6">
+          <h3 class="text-white font-semibold">Love, Q&amp;A</h3>
+          <p class="text-white text-sm">Feb 14–15, 2022 — Newport</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+   <!-- 2020 -->
+<div>
+  <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] my-24">
+  <h2 class="text-center text-3xl font-bold py-10 bg-gray-100 border-y border-gray-300 tracking-widest">
+    2020
+  </h2>
+</div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 justify-items-center">
+
+    <!-- LATEST -->
+    <div class="relative group overflow-hidden rounded-xl w-full max-w-[380px]">
+      <img src="images/concert/84814720_1655195704618645_8161133204720320512_n.jpg"
+           class="w-full h-auto block"
+           loading="lazy">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition
+                  flex flex-col justify-end p-6">
+        <h3 class="text-white font-semibold">Hopeless Romantic 2</h3>
+        <p class="text-white text-sm">Mar 27–28, 2020 — BGC</p>
+      </div>
+    </div>
+
+    <!-- OLDEST -->
+    <div class="relative group overflow-hidden rounded-xl w-full max-w-[380px]">
+      <img src="images/concert/79596440_1597046057100277_620746456445222912_n.jpg"
+           class="w-full h-auto block"
+           loading="lazy">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition
+                  flex flex-col justify-end p-6">
+        <h3 class="text-white font-semibold">Hopeless Romantic</h3>
+        <p class="text-white text-sm">Jan 17–18, 2020 — BGC</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <!-- 2019 -->
+<div>
+  <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] my-24">
+  <h2 class="text-center text-3xl font-bold py-10 bg-gray-100 border-y border-gray-300 tracking-widest">
+    2019
+  </h2>
+</div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 justify-items-center">
+
+    <!-- LATEST -->
+    <div class="relative group overflow-hidden rounded-xl w-full max-w-[380px]">
+      <img src="images/concert/85jsm.jpeg"
+           class="w-full h-auto block"
+           loading="lazy">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition
+                  flex flex-col justify-end p-6">
+        <h3 class="text-white font-semibold">Songs From The Heart</h3>
+        <p class="text-white text-sm">July 6, 2019 — El Cerrito</p>
+      </div>
+    </div>
+
+    <!-- OLDEST -->
+    <div class="relative group overflow-hidden rounded-xl w-full max-w-[380px]">
+      <img src="images/concert/m3PFL.jpeg"
+           class="w-full h-auto block"
+           loading="lazy">
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition
+                  flex flex-col justify-end p-6">
+        <h3 class="text-white font-semibold">Music &amp; Laughter</h3>
+        <p class="text-white text-sm">March 30, 2019 — Germany</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+   <!-- 2018 -->
+<div>
+  <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] my-24">
+  <h2 class="text-center text-3xl font-bold py-10 bg-gray-100 border-y border-gray-300 tracking-widest">
+    2018
+  </h2>
+</div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- SOLO POSTER (CENTERED ON DESKTOP) -->
+    <div class="lg:col-span-3 flex justify-center">
+      <div class="relative group overflow-hidden rounded-xl w-full max-w-[380px] h-[420px]">
+        <img src="images/concert/XDEz4.jpeg"
+             class="w-full h-full object-cover object-top"
+             loading="lazy">
+        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition
+                    flex flex-col justify-end p-6">
+          <h3 class="text-white font-semibold">Odette Quesada Live!</h3>
+          <p class="text-white text-sm">Dec 2, 2018 — Cerritos</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <!-- 2015 -->
+<div>
+  <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] my-24">
+  <h2 class="text-center text-3xl font-bold py-10 bg-gray-100 border-y border-gray-300 tracking-widest">
+    2015
+  </h2>
+</div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- SOLO POSTER (CENTERED ON DESKTOP) -->
+    <div class="lg:col-span-3 flex justify-center">
+      <div class="relative group overflow-hidden rounded-xl w-full max-w-[380px]">
+        <img src="images/concert/AfeRV.jpeg"
+             class="w-full h-auto block"
+             loading="lazy">
+
+        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition
+                    flex flex-col justify-end p-6">
+          <h3 class="text-white font-semibold">Music &amp; Laughter</h3>
+          <p class="text-white text-sm">Mar 30, 2015 — Switzerland</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <!-- 2014 -->
+<div>
+  <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] my-24">
+  <h2 class="text-center text-3xl font-bold py-10 bg-gray-100 border-y border-gray-300 tracking-widest">
+    2014
+  </h2>
+</div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- SOLO POSTER (CENTERED ON DESKTOP) -->
+    <div class="lg:col-span-3 flex justify-center">
+      <div class="relative group overflow-hidden rounded-xl w-full max-w-[380px]">
+        <img src="images/concert/11951869_589681841170042_2769521050681242949_n.jpg"
+             class="w-full h-auto block"
+             loading="lazy">
+
+        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition
+                    flex flex-col justify-end p-6">
+          <h3 class="text-white font-semibold">Live in Europe</h3>
+          <p class="text-white text-sm">Mar 29–31, 2014 — Zurich, Vienna</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+
+</section>
+
+</section>
+
+
+
+
+<!-- ===== VIDEO WRAPPER ===== -->
+<!-- ============================
+     VIDEO SECTION
+============================= -->
+<section id="video-section"
+         class="hidden max-w-7xl mx-auto px-4 md:px-10 py-24 space-y-20">
+
+  <!-- VIDEO 1 -->
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+    <div class="aspect-video w-full rounded-xl overflow-hidden">
+      <iframe class="w-full h-full"
+        src="https://www.youtube.com/embed/n7v6_AnRIYI?rel=0"
+        allowfullscreen></iframe>
+    </div>
+    <div>
+      <h3 class="text-xl md:text-2xl font-semibold">
+        Odette Quesada and friends wow U.S. audience with back-to-back sold-out shows | TFC News California
+      </h3>
+      <p class="text-gray-500 mt-2">May 15, 2024</p>
+    </div>
+  </div>
+
+  <!-- VIDEO 2 (ALTERNATE) -->
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+    <div class="md:order-2 aspect-video w-full rounded-xl overflow-hidden">
+      <iframe class="w-full h-full"
+        src="https://www.youtube.com/embed/3OYzecbehfU?rel=0"
+        allowfullscreen></iframe>
+    </div>
+    <div class="md:order-1">
+      <h3 class="text-xl md:text-2xl font-semibold">
+        Odette Quesada wows US audience with back-to-back sold-out shows | ANC
+      </h3>
+      <p class="text-gray-500 mt-2">May 14, 2024</p>
+    </div>
+  </div>
+
+  <!-- VIDEO 3 -->
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+    <div class="aspect-video w-full rounded-xl overflow-hidden">
+      <iframe class="w-full h-full"
+        src="https://www.youtube.com/embed/TchOiDauoMQ?rel=0"
+        allowfullscreen></iframe>
+    </div>
+    <div>
+      <h3 class="text-xl md:text-2xl font-semibold">
+        40th anniversary concert ni Odette Quesada, kasado na sa California | TFC News California
+      </h3>
+      <p class="text-gray-500 mt-2">April 13, 2024</p>
+    </div>
+  </div>
+
+  <!-- VIDEO 4 (ALTERNATE) -->
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+    <div class="md:order-2 aspect-video w-full rounded-xl overflow-hidden">
+      <iframe class="w-full h-full"
+        src="https://www.youtube.com/embed/jaATrcYvaRk?rel=0"
+        allowfullscreen></iframe>
+    </div>
+    <div class="md:order-1">
+      <h3 class="text-xl md:text-2xl font-semibold">
+        Odette Quesada to bring 40th anniversary concert to California | TFC News California
+      </h3>
+      <p class="text-gray-500 mt-2">April 10, 2024</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<!-- ============================
+     JAVASCRIPT
+============================= -->
+<script src="script.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const concertSection = document.getElementById("concert-section");
+  const videoSection   = document.getElementById("video-section");
+
+  const btnConcert = document.getElementById("btn-concert");
+  const btnVideo   = document.getElementById("btn-video");
+
+  function scrollToSection(section) {
+    setTimeout(() => {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }, 50);
+  }
+
+  function showConcert() {
+    concertSection.classList.remove("hidden");
+    videoSection.classList.add("hidden");
+
+    btnConcert.classList.add("bg-black","text-white");
+    btnVideo.classList.remove("bg-black","text-white");
+
+    scrollToSection(concertSection);
+  }
+
+  function showVideo() {
+    videoSection.classList.remove("hidden");
+    concertSection.classList.add("hidden");
+
+    btnVideo.classList.add("bg-black","text-white");
+    btnConcert.classList.remove("bg-black","text-white");
+
+    scrollToSection(videoSection);
+  }
+
+  // expose for inline onclick
+  window.showConcert = showConcert;
+  window.showVideo   = showVideo;
+
+  // 🔽 AUTO SCROLL ON PAGE LOAD (CONCERT DEFAULT)
+  setTimeout(() => {
+    scrollToSection(concertSection);
+  }, 300);
+
+});
+</script>
+</body>
+</html>

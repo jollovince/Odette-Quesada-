@@ -1,0 +1,89 @@
+<nav id="navbar"
+  class="fixed top-0 left-0 w-full
+         z-[9999] pointer-events-auto
+         flex items-center justify-between
+         px-4 md:px-10 py-3
+         bg-[#132840]
+         transition-all duration-300">
+
+  <!-- LEFT -->
+  <div class="flex items-center gap-3">
+    <div class="h-10 w-28 overflow-hidden">
+      <img src="./images/wblog-1.webp"
+           alt="Odette Logo"
+           class="h-full w-full object-cover">
+    </div>
+    <h2 class="text-white font-semibold tracking-wide">
+      ODETTE QUESADA
+    </h2>
+  </div>
+
+  <!-- HAMBURGER -->
+  <button
+    id="menu-toggle"
+    type="button"
+    aria-label="Toggle menu"
+    class="md:hidden absolute right-4 top-1/2 -translate-y-1/2
+           flex flex-col gap-1
+           z-[10000] pointer-events-auto">
+    <span class="block w-6 h-[2px] bg-white"></span>
+    <span class="block w-6 h-[2px] bg-white"></span>
+    <span class="block w-6 h-[2px] bg-white"></span>
+  </button>
+
+  <!-- MENU -->
+  <ul id="nav-menu"
+    class="fixed top-[64px] right-4
+           z-[9998]
+           w-[220px]
+           bg-black/95 backdrop-blur
+           rounded-2xl hidden
+           flex flex-col gap-5
+           px-6 py-6
+           text-white text-sm font-medium
+           shadow-2xl
+           pointer-events-auto
+           md:static md:flex md:flex-row
+           md:z-auto md:w-auto
+           md:bg-transparent md:shadow-none
+           md:backdrop-blur-0
+           md:rounded-none
+           md:px-0 md:py-0 md:gap-8">
+
+    <li><a href="index.html" class="hover:opacity-70">HOME</a></li>
+    <li><a href="Read.html" class="hover:opacity-70">ABOUT</a></li>
+    <li><a href="Readmore.html" class="hover:opacity-70">NEWS</a></li>
+    <li><a href="music.html" class="hover:opacity-70">MUSIC</a></li>
+    <li><a href="concert.html" class="hover:opacity-70">CONCERT</a></li>
+    <li><a href="contact.html" class="hover:opacity-70">CONTACT</a></li>
+  </ul>
+
+</nav>
+
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+const navbar = document.getElementById("navbar");
+
+function toggleMenu(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  navMenu.classList.toggle("hidden");
+}
+
+menuToggle.addEventListener("click", toggleMenu);
+menuToggle.addEventListener("touchstart", toggleMenu);
+
+// shrink header on scroll
+window.addEventListener("scroll", () => {
+  navbar.classList.toggle("py-2", window.scrollY > 20);
+  navbar.classList.toggle("py-3", window.scrollY <= 20);
+});
+
+// close menu when clicking outside
+document.addEventListener("click", (e) => {
+  if (!navbar.contains(e.target)) {
+    navMenu.classList.add("hidden");
+  }
+});
+</script>

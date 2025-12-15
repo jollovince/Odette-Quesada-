@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odette Quesada | 40-year Milestone</title>
+
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- HEADER / FOOTER -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<!-- HERO (FULL COVER) -->
+<section class="relative w-full h-[60vh] md:h-[75vh] overflow-hidden">
+  <img
+    src="images/CPP_2260.jpg"
+    alt=""
+    class="absolute inset-0 w-full h-full object-cover object-[center_5%] md:object-[center_15%]"
+  >
+  <div class="absolute inset-0 bg-black/30"></div>
+</section>
+
+<!-- =====================
+     PAGE TITLE
+===================== -->
+<section class="py-20 bg-white">
+  <h1 class="text-center
+             text-[2.9rem] md:text-[3.3rem]
+             font-light
+             tracking-[0.42em]
+             uppercase
+             font-['Montserrat']
+             text-black/90">
+    NEWS
+  </h1>
+</section>
+
+<!-- =====================
+     ARTICLE CONTENT
+===================== -->
+<main class="max-w-4xl mx-auto px-6 pb-24">
+
+  <!-- FEATURE IMAGE -->
+  <div class="mb-14">
+    <img src="images/Article-2.jpeg"
+         alt="Odette Quesada performing live"
+         class="w-full rounded-2xl object-cover">
+  </div>
+
+  <!-- ARTICLE HEADER -->
+  <div class="mb-10">
+    <h2 class="font-['Playfair_Display'] text-3xl md:text-4xl font-bold mb-3 leading-snug">
+      40-Year Milestone: Odette Quesada Takes Stock of Her Musical Legacy
+    </h2>
+    <p class="text-sm text-gray-500">
+      Published August 28, 2023
+    </p>
+  </div>
+
+  <!-- ARTICLE BODY -->
+  <article class="space-y-6 text-[15.5px] leading-relaxed text-gray-800">
+
+    <p>
+  To this day, karaoke-loving Pinoys continue to listen or sing-along to
+  Ric Segreto’s <i>“Don’t Know What to Do, Don’t Know What to Say”</i> and
+  <i>“Give Me a Chance,”</i> Raymond Lauchengco’s
+  <i>“I Need You Back”</i> and <i>“Farewell,”</i>
+  Kuh Ledesma’s <i>“Till I Met You”</i> and
+  <i>“A Long, Long Time Ago,”</i>
+  Gary Valenciano’s <i>“Growing Up”</i> (from <i>Bagets</i>),
+  and Odette’s very own signature hit,
+  <i>“Friend of Mine.”</i>
+</p>
+
+<p>
+  Odette Quesada was only in her teens — maybe around 14, 15, or 16 —
+  when she began writing songs that would eventually become some of
+  OPM’s (Original Pilipino Music) best-loved and most enduring hits.
+  Indeed, while they may have been written and recorded about four
+  decades ago, many of her songs have easily stood the test of time.
+</p>
+
+<p>
+  The aforementioned lineup wouldn’t be complete without mentioning
+  another karaoke staple that has become Odette’s personal favorite
+  over time.
+</p>
+
+<p>
+  The articulate and quick-witted US-based singer-songwriter didn’t
+  really write them with the top of the pop charts in mind.
+  “When I was writing them, I didn’t have any inkling if anyone would
+  like them at all,” said Odette when we spoke to her last week.
+  “I thought they’d have a shelf life of probably 10 years, and hoped
+  they’d get revisited by the next generation somehow.”
+</p>
+
+<p>
+  “But to actually have my songs continuously being played because of
+  videoke, karaoke, or YouTube… that’s truly special. These things, as
+  well as the Pinoys’ penchant for love songs, keep them alive and well.
+  I can’t be any happier knowing that they’re going to live on long
+  after I’ve passed on.”
+</p>
+
+  </article>
+
+  <!-- =====================
+       SEE MORE
+  ===================== -->
+  <div class="mt-14 border-t pt-8">
+    <h4 class="uppercase tracking-widest text-sm text-gray-500 mb-3">
+      See more
+    </h4>
+    <a href="https://entertainment.inquirer.net/515966/40-year-milestone-odette-quesada-takes-stock-of-her-musical-legacy"
+       target="_blank"
+       class="inline-block text-sm font-medium underline hover:opacity-70">
+      INQUIRER.NET
+    </a>
+  </div>
+
+</main>
+
+<!-- =====================
+     BACK BUTTON
+===================== -->
+<div class="text-center pb-20">
+  <a href="Readmore.html#news"
+     class="inline-block px-8 py-3 border rounded-full font-semibold
+            hover:bg-black hover:text-white transition">
+    BACK TO NEWS
+  </a>
+</div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script src="article-scroll.js"></script>
+
+<!-- JS -->
+<script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+});
+</script>
+
+</body>
+</html>

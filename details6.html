@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FREE & EASY – Odette Quesada</title>
+
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- HEADER / FOOTER -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <style>
+    body { font-family: 'Josefin Sans', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<!-- HERO -->
+<section class="relative w-full h-[55vh] md:h-[70vh] overflow-hidden">
+  <img src="images/EOSR7769.jpg"
+       class="absolute inset-0 w-full h-full object-cover object-center"
+       alt="">
+  <div class="absolute inset-0 bg-black/40"></div>
+</section>
+
+<!-- TITLE -->
+<section class="py-16 text-center">
+  <h1 class="text-4xl md:text-5xl tracking-widest font-semibold">
+    FREE & EASY
+  </h1>
+</section>
+
+<!-- CONTENT -->
+<section class="max-w-6xl mx-auto px-6 pb-24 space-y-20">
+
+  <!-- DESCRIPTION -->
+  <div class="max-w-3xl mx-auto text-[15px] leading-relaxed text-gray-800">
+
+    <p id="album-desc"
+       class="
+         md:max-h-none
+         max-h-[110px]
+         overflow-hidden
+         transition-all
+         duration-300
+       ">
+
+      The album <b>Free & Easy</b> is a distinctive and highly enjoyable entry
+      in the Odette Quesada discography, offering a refreshing shift from her
+      signature intense romantic ballads. This mid-80s compilation highlights
+      her gift for crafting light, breezy, and effortlessly melodic songs that
+      perfectly embody the album’s title.
+      <br><br>
+      Unlike the emotionally heavy narratives of her earlier work, these tracks
+      lean toward a relaxed, easy-listening style, showcasing her versatility
+      as a composer. The album includes her own renditions of early signature
+      hits alongside compelling deep cuts, many of which carry unique stories.
+      <br><br>
+      Particularly notable is <i>“Where Can I Find”</i>, a collaboration with
+      Alvina Sy following their respective Metropop successes, with Odette
+      providing the melody to Sy’s lyrics. Also featured is the deeply personal
+      track <i>“Sorry About the Erasures,”</i> cherished by listeners drawn to
+      her more introspective works.
+      <br><br>
+      <b>Free & Easy</b> stands as a testament to Odette Quesada’s adaptability
+      and the wide-ranging appeal of her foundational OPM repertoire—offering a
+      vibrant and refreshing complement to her emotionally intense classics.
+    </p>
+
+    <!-- MOBILE BUTTON -->
+    <div class="text-center mt-6 md:hidden">
+      <button id="seeMoreBtn"
+        class="px-6 py-2 border rounded-full text-sm font-medium">
+        See More
+      </button>
+    </div>
+
+  </div>
+
+  <!-- ALBUM + TRACKLIST -->
+  <div class="grid md:grid-cols-2 gap-16 items-start">
+
+    <!-- COVER -->
+    <div class="flex justify-center">
+      <div class="relative">
+        <img src="images/IMG_00002-scaled-e1747493023703.webp"
+             class="w-[320px] rounded-xl shadow-lg"
+             alt="Free & Easy Album Cover">
+      </div>
+    </div>
+
+    <!-- TRACKLIST -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-6">Track List</h2>
+
+      <ul class="space-y-2 text-sm">
+        <li class="hover:underline">Free & Easy</li>
+        <li class="hover:underline">Could It Be</li>
+        <li class="hover:underline">Once Upon A Time</li>
+        <li class="hover:underline">I Am Here For Good</li>
+        <li class="hover:underline">I Don’t Know When</li>
+        <li class="hover:underline">Rock & Roll – Lately</li>
+        <li class="hover:underline">Where Can I Find</li>
+        <li class="hover:underline">Getting Over You</li>
+        <li class="hover:underline">Any Minute Now</li>
+        <li class="hover:underline">Sorry About The Erasures</li>
+      </ul>
+
+      <!-- LISTEN -->
+      <div class="mt-8">
+        <a href="https://music.youtube.com/channel/UCcWq-cca4d_mjQvIimi1UqQ"
+           target="_blank"
+           class="inline-block px-8 py-3 border rounded-full font-medium">
+          🎧 LISTEN NOW
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BACK -->
+  <div class="text-center pt-20">
+    <a href="music.html#albums"
+       class="px-8 py-3 border rounded-full font-medium">
+      BACK TO ALBUMS
+    </a>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<!-- JS -->
+<script src="details-scroll.js"></script>
+<script src="script.js"></script>
+
+<script>
+  const desc = document.getElementById("album-desc");
+  const btn = document.getElementById("seeMoreBtn");
+
+  btn.addEventListener("click", () => {
+    const expanded = desc.classList.toggle("expanded");
+
+    if (expanded) {
+      desc.classList.remove("max-h-[110px]");
+      desc.classList.add("max-h-[2000px]");
+      btn.textContent = "See Less";
+    } else {
+      desc.classList.remove("max-h-[2000px]");
+      desc.classList.add("max-h-[110px]");
+      btn.textContent = "See More";
+    }
+  });
+</script>
+
+</body>
+</html>

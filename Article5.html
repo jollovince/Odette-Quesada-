@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odette Quesada | The Gift That Keeps on Giving</title>
+
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- HEADER / FOOTER -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<!-- ============================
+     HERO / BANNER
+============================= -->
+<section class="relative w-full h-[60vh] md:h-[75vh] overflow-hidden">
+  <img
+    src="images/CPP_2260.jpg"
+    alt=""
+    class="absolute inset-0 w-full h-full object-cover object-[center_5%] md:object-[center_15%]"
+  >
+  <div class="absolute inset-0 bg-black/30"></div>
+</section>
+
+<!-- ============================
+     NEWS TITLE (EXACT STYLE)
+============================= -->
+<section class="py-20 bg-white">
+  <h1 class="text-center
+             text-[2.9rem] md:text-[3.3rem]
+             font-light
+             tracking-[0.42em]
+             uppercase
+             font-['Montserrat']
+             text-black/90">
+    NEWS
+  </h1>
+</section>
+
+<!-- ============================
+     ARTICLE
+============================= -->
+<main class="max-w-3xl mx-auto px-6 pb-24">
+
+  <!-- FEATURE IMAGE -->
+  <div class="mb-12">
+    <img
+      src="images/Article-5.jpg"
+      alt="Odette Quesada performing live"
+      class="w-full rounded-lg"
+    >
+  </div>
+
+  <!-- ARTICLE HEADER -->
+  <header class="mb-10 text-center">
+    <h2 class="font-['Playfair_Display'] text-3xl md:text-4xl font-semibold leading-snug mb-4">
+      Odette Quesada’s Music: The Gift That Keeps on Giving
+    </h2>
+    <p class="text-sm text-gray-500">
+      Published November 22, 2023
+    </p>
+  </header>
+
+  <!-- ARTICLE BODY -->
+  <article class="space-y-6 text-[15.5px] leading-7 text-gray-800">
+
+   <p><b>MANILA, Philippines —</b> If you think only foreign artists or dreamy K-pop idols can dominate the local concert scene, think again. Odette Quesada’s anniversary concert at the Newport Performing Arts Theater last Sept. 1 was already a <b>sold-out, star-studded affair</b> long before the beloved singer-songwriter even stepped on stage.</p>
+
+      <p>So it came as no surprise when organizers from <b>AiP (Anything is Possible) Media Production Inc.</b> announced that tickets for her concert repeat at the <b>Samsung Performing Arts Theater</b> in Circuit Makati were also sold out within days. Due to overwhelming demand, an additional show was added—but even that sold out within the same week of ticket release, two months before the event!</p>
+
+      <p>Producer, writer, and talent manager <b>Noel Ferrer</b> confirmed the impressive turnout, sharing with a laugh, “We sold out that first date practically overnight—as in!”</p>
+
+      <p>When asked how she feels about the continued love and support from Filipino music fans, Odette expressed pure gratitude and joy. “I’m so thankful that people still sing my songs,” she said. “They’ve become the gifts that keep on giving.”</p>
+
+      <p>Indeed, her music has stood the test of time. Songs like <i>To Love Again</i> (Sharon Cuneta), <i>Don’t Know What to Do, Don’t Know What to Say</i> and <i>Give Me a Chance</i> (Ric Segreto), <i>I Need You Back</i> and <i>Farewell</i> (Raymond Lauchengco), <i>Till I Met You</i> (Kuh Ledesma), <i>Growing Up</i> (Gary Valenciano), and her own hits <i>Friend of Mine</i> and <i>I Remember You</i> remain beloved by generations of listeners.</p>
+  </article>
+
+  <!-- SEE MORE -->
+  <div class="mt-14 border-t pt-8">
+    <h4 class="uppercase tracking-widest text-sm text-gray-500 mb-3">
+      See more
+    </h4>
+    <a
+      href="https://entertainment.inquirer.net/528174/odette-quesadas-music-the-gift-that-keeps-on-giving"
+      target="_blank"
+      class="text-black font-medium hover:underline"
+    >
+      INQUIRER.NET
+    </a>
+  </div>
+
+</main>
+
+<!-- BACK BUTTON -->
+<div class="text-center pb-24">
+  <a
+    href="Readmore.html#news"
+    class="inline-block px-8 py-3 border border-black text-sm tracking-widest hover:bg-black hover:text-white transition"
+    
+  >
+    BACK TO NEWS
+  </a>
+</div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script src="article-scroll.js"></script>
+
+<!-- JS -->
+<script src="script.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  });
+</script>
+
+</body>
+</html>
